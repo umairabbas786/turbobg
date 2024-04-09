@@ -74,7 +74,7 @@ export const work = {
     },
     {
       title: "Continuous Feedback and Improvement",
-      description: "I maintain an open line of communication for feedback and continuously adapt my teaching methods to maximize effectiveness and student satisfaction.",
+      description: "Maintaining open communication for feedback is key to refining my teaching methods. By being receptive to student and colleague insights, I can adjust strategies to enhance learning outcomes. This ensures that my methods are engaging and tailored to diverse needs, fostering a positive learning environment. It prioritizes student satisfaction, allowing their feedback to shape my approach. My dedication to continuous improvement reflects a commitment to fostering a supportive and adaptive educational experience.",
       icons: null,
     }
   ],
@@ -84,33 +84,40 @@ export const projects = {
   title: "Testimonials",
   cards: [
     {
-      //title: "StarBook",
-      //description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
-      //image: profile.src,
+      title: "StarBook",
+      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+      image: profile.src,
+      icons: [
+        {
+          icon: faAppStore,
+          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+        },
+       
+      ]
     },
     {
-      //title: "QuranTalk",
-      //description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      // icons: [
-      //   {
-      //     icon: faAppStore,
-      //     link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-      //   },
-      //   {
-      //     icon: faGooglePlay,
-      //     link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-      //   },
-      // ]
+      title: "QuranTalk",
+      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
+      icons: [
+        {
+          icon: faAppStore,
+          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+        },
+        {
+          icon: faGooglePlay,
+          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+        },
+      ]
     },
     {
-      //title: "Portfolio",
-      //description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-      // icons: [
-      //   {
-      //     icon: faGithub,
-      //     link: "https://github.com/hashirshoaeb/portfolio",
-      //   },
-      // ]
+      title: "Portfolio",
+      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/hashirshoaeb/portfolio",
+        },
+      ]
     },
   ],
 }

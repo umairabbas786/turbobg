@@ -63,14 +63,14 @@ export const Intro = ({
             <div className="d-xl-flex flex-column ms-0 ms-md-5 d-none">
               <img
                 className="img-fluid my-0 my-md-3 card-image"
-                width="120"
+                width="200"
                 height="320"
                 src={workImage}
                 alt="profile of hashirshoaeb"
               />
               <img
                 className="img-fluid my-0 my-md-3 card-image"
-                width="120"
+                width="200"
                 height="320"
                 src={work2Image}
                 alt="profile of hashirshoaeb"
@@ -80,14 +80,14 @@ export const Intro = ({
           <div className="col-12 d-flex d-xl-none justify-content-start">
             <img
               className="img-fluid my-0 my-md-3 card-image"
-              width="45%"
+              width="40%"
               height="100"
               src={workImage}
               alt="profile of hashirshoaeb"
             />
             <img
               className="img-fluid my-0 my-md-3 card-image align-self-center ms-auto"
-              width="45%"
+              width="55%"
               height="320"
               src={work2Image}
               alt="profile of hashirshoaeb"

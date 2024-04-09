@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link'
+import Link from 'next/link';
 
 export const Skills = ({ title, cards }) => {
 	return (
@@ -19,44 +19,106 @@ export const Skills = ({ title, cards }) => {
 			</div>
 		</div>
 	);
-}
+};
 
 export const Projects = ({ title, cards }) => {
 	return (
 		<div id="projects" className="bg-primary py-5 px-5">
 			<div className="container">
-				<h1 className="text-light fw-bold">Testimonials</h1>
+				<h1 className="text-light fw-bold mb-5">{title}</h1>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
-						<Card
+						<TestimonialCard
 							key={index}
 							title={value.title}
 							description={value.description}
 							icons={value.icons} />
 					))}
 				</div>
-				{/* <div className="text-center">
-					<button type="button" className="btn btn-outline-light">See More</button>
-				</div> */}
 			</div>
 		</div>
 	);
-}
+};
 
-export const Card = ({ title, description, icons }) => {
+export const Card = ({ title, description, link, icons }) => {
 	return (
-		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
-			<h4 className="text-primary">{title}</h4>
-			<p className="text-dark">{description}</p>
+		<div className="card  mx-sm-4 my-4 card-work" style={{
+			width: "20rem",
+			boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+			borderRadius: "15px",
+			transition: "transform 0.3s ease, box-shadow 0.3s ease",
+			backgroundColor: "#ffffff",
+		}}
+			onMouseOver={e => {
+				e.currentTarget.style.transform = "scale(1.05)";
+				e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
+			}}
+			onMouseOut={e => {
+				e.currentTarget.style.transform = "scale(1)";
+				e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+			}}>
+			<div style={{width: '100%', backgroundColor: '#365B6D ', borderTopLeftRadius: '15px', borderTopRightRadius: '15px'}}>
+				<h4 className="text-white m-3">{title}</h4>
+			</div>
+			<p className="text-dark m-3">{description}</p>
 			<div className="text-end">
 				{icons && icons.map((value, index) => (
 					<Link key={index} href={value.link}>
 						<a target="_blank" rel="noreferrer">
-							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="2x" />
+							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="lg" />
 						</a>
 					</Link>
 				))}
 			</div>
 		</div>
 	);
-}
+};
+export const TestimonialCard = ({ title, description, link, icons, imageUrl, rating }) => {
+  // Simple function to render stars based on the rating
+  const renderStars = (rating) => {
+    const totalStars = 5;
+    let stars = '';
+    for (let i = 1; i <= totalStars; i++) {
+      stars += '★'
+    }
+    return stars;
+  };
+
+  return (
+    <div className="card mx-sm-4 my-4 card-work" style={{
+      width: "20rem",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      borderRadius: "15px",
+      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+      backgroundColor: "#ffffff",
+    }}
+      onMouseOver={e => {
+        e.currentTarget.style.transform = "scale(1.05)";
+        e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
+      }}
+      onMouseOut={e => {
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+      }}>
+      {/* Image placeholder at the top */}
+      <div style={{width: '100%', backgroundColor: '#365B6D', borderTopLeftRadius: '15px', borderTopRightRadius: '15px', textAlign: 'center'}}>
+        <img src='./profile.png' alt="testimonial" style={{marginTop: '-30px', width: '60px', height: '60px', borderRadius: '50%', border: '3px solid white'}} />
+        <h4 className="text-white m-3">{title}</h4>
+      </div>
+      <p className="text-dark m-3">{description}</p>
+      <div className="text-end m-3">
+        {icons && icons.map((value, index) => (
+          <Link key={index} href={value.link}>
+            <a target="_blank" rel="noreferrer">
+              <FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="lg" />
+            </a>
+          </Link>
+        ))}
+      </div>
+      {/* Star rating at the bottom */}
+      <div className="text-center" style={{fontSize: '20px', color: '#FFD700'}}>
+        {renderStars(rating)}
+      </div>
+    </div>
+  );
+};
