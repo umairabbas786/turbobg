@@ -29,7 +29,7 @@ export const Contact = ({ title, description, buttons }) => {
 						))}
 						
 					</div>
-					<div className='w-100 d-flex justify-content-md-end'><img
+					<div className='w-100 d-flex justify-content-center justify-content-md-end'><img
 							className="img-fluid my-0 my-md-3 logos"
 							height="100" src='/logos.png'
 							alt="logos"
