@@ -155,3 +155,55 @@ a {
     width: 90%;
   }
 }
+
+.testimonial_sec {
+  .testimonial_inner {
+    width: 100%;
+        .card {
+          margin-right: 15px;
+          border-radius: 10px;
+          .card-body {
+            .rating > span {
+              color: #ffc004;
+            }
+            .card-title {
+              font: normal 15px/28px;
+              padding-top: 5px;
+            }
+            strong {
+              text-transform: uppercase;
+              font-size: 15px;
+            }
+            span {
+              text-transform: uppercase;
+              color: #cdcdcd;
+              font-size: 14px;
+            }
+          }
+        }
+  }
+}
+
+// Responsive
+@media (min-width: 992px) and (max-width: 1199px) {
+  .testimonial_sec
+    .testimonial_inner
+    .slick-list
+    .slick-track
+    .card
+    .card-body
+    .card-title {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .testimonial_sec
+    .testimonial_inner
+    .slick-list
+    .slick-track
+    .card
+    .card-body
+    .card-title {
+    font-size: 14px;
+  }
+}
