@@ -32,11 +32,11 @@ export const Intro = ({
               dedicated to helping you achieve maximum problem-solving results
               in your AP® Computer Science journey.
             </p>
-            <div className="text-center">
+            <div className="text-start">
               {buttons.map((value, index) =>
                 value.isPrimary ? (
                   <Link key={index} href={value.link}>
-                    <a className="btn btn-primary my-1 mx-3">{value.title}</a>
+                    <a className="btn btn-primary my-1">{value.title}</a>
                   </Link>
                 ) : (
                   <Link key={index} href={value.link}>
