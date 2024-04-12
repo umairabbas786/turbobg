@@ -153,7 +153,7 @@ export const links = {
   image: profile.src,
   workImage: workImg.src,
   work2Image: work2Img.src,
-  title: "@hashirshoaeb",
+  title: "Birol",
   description: "Computer Engineer | Flutter | Reactjs Developer",
   cards: [
     {
