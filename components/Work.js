@@ -35,70 +35,83 @@ export const Projects = ({ title, cards }) => {
 							description={value.description}
 							icons={value.icons} />
 					))} */}
-          <div class="testimonial_sec">
-            <div class="testimonial_inner d-flex flex-row flex-wrap justify-content-center">
-              <div class="card w-25">
-                <div class="card-body">
-                  <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+          <div class="testimonial_sec container">
+            <div class="testimonial_inner d-flex justify-content-center">
+              <div className="row">
+                <div className="col-md-4 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <h5 class="card-title">
+                        <strong>Ted Emch</strong>
+                      </h5>
+                      <p class="card-text">
+                        Several of my students have worked with Birol. In each
+                        case, I&apos;ve seen monumental improvement in their
+                        understanding and test scores. I&apos;m certain these
+                        students have appreciated getting past the blockages
+                        that were holding them back; things we just can&apos;t
+                        spend deeper time on in class.” Each student is
+                        different and Birol understands that!
+                      </p>
+                      <strong>
+                        Computer Science Teacher - Pioneer High School
+                      </strong>{" "}
+                      <br />
+                    </div>
                   </div>
-                  <h5 class="card-title">Computer Science Teacher - Pioneer High School</h5>
-									<br/>
-                  <p class="card-text">
-                    Several of my students have worked with Birol. In each case,
-                    I&apos;ve seen monumental improvement in their understanding and
-                    test scores. I&apos;m certain these students have appreciated
-                    getting past the blockages that were holding them back;
-                    things we just can&apos;t spend deeper time on in class.” Each
-                    student is different and Birol understands that!
-                  </p>
-                  <strong>Ted Emch</strong> <br />
                 </div>
-              </div>
-
-              <div class="card w-25">
-                <div class="card-body">
-                  <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                <div className="col-md-4 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
+                      <br />
+                      <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Excepturi veniam cumque maxime doloribus
+                        doloremque recusandae dolorem consequuntur modi, sit
+                        blanditiis!
+                      </p>
+                      <strong>Jone Doe</strong> <br />
+                      <span>Manager</span>
+                    </div>
                   </div>
-                  <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
-									<br/>
-                  <p class="card-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Excepturi veniam cumque maxime doloribus doloremque
-                    recusandae dolorem consequuntur modi, sit blanditiis!
-                  </p>
-                  <strong>Jone Doe</strong> <br />
-                  <span>Manager</span>
                 </div>
-              </div>
-
-              <div class="card w-25">
-                <div class="card-body">
-                  <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                <div className="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
+                      <br />
+                      <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Excepturi veniam cumque maxime doloribus
+                        doloremque recusandae dolorem consequuntur modi, sit
+                        blanditiis!
+                      </p>
+                      <strong>Jone Doe</strong> <br />
+                      <span>Manager</span>
+                    </div>
                   </div>
-                  <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
-									<br/>
-                  <p class="card-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Excepturi veniam cumque maxime doloribus doloremque
-                    recusandae dolorem consequuntur modi, sit blanditiis!
-                  </p>
-                  <strong>Jone Doe</strong> <br />
-                  <span>Manager</span>
                 </div>
               </div>
             </div>
