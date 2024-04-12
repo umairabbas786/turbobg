@@ -77,16 +77,21 @@ export const Projects = ({ title, cards }) => {
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                       </div>
-                      <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
-                      <br />
+                      <h5 class="card-title">
+                        <strong>Brendan K.</strong>
+                      </h5>
                       <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Excepturi veniam cumque maxime doloribus
-                        doloremque recusandae dolorem consequuntur modi, sit
-                        blanditiis!
+                        The hands-on coding sessions with Birol have made a huge
+                        difference in my understanding of computer science
+                        principles. His ability to connect coding challenges to
+                        real-world applications has made learning much more
+                        relatable and effective. I can now approach complex
+                        problems with confidence!
                       </p>
-                      <strong>Jone Doe</strong> <br />
-                      <span>Manager</span>
+                      <strong>Student</strong>
+                      <br />
+                      <br />
+											<br/>
                     </div>
                   </div>
                 </div>
@@ -100,16 +105,20 @@ export const Projects = ({ title, cards }) => {
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                       </div>
-                      <h5 class="card-title">Aenean Sagittis Enim Quis</h5>
-                      <br />
+                      <h5 class="card-title">
+                        <strong>Kwodwo N.</strong>
+                      </h5>
                       <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Excepturi veniam cumque maxime doloribus
-                        doloremque recusandae dolorem consequuntur modi, sit
-                        blanditiis!
+                        Birol&apos;s tutoring sessions are always well-organized
+                        and tailored to fit my learning pace. His enthusiasm and
+                        expert knowledge made each tutoring session something I
+                        looked forward to. Thanks to Birol, I feel well-prepared
+                        for my future in tech! I appreciate how he always has
+                        time to answer my questions, no matter how small. With
+                        his help, I&apos;ve seen a real improvement in my
+                        problem-solving skills!
                       </p>
-                      <strong>Jone Doe</strong> <br />
-                      <span>Manager</span>
+                      <strong>Student</strong>
                     </div>
                   </div>
                 </div>

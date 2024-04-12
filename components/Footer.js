@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Contact = ({ title, description, buttons }) => {
   return (
     <div id="contact" className="bg-white py-5 px-5">
-      <div className="container d-flex">
+      <div className="container d-flex flex-wrap">
         <div>
           <h1 className="text-primary fw-bold">{title}</h1>
           <div className="px-sm-5 lh-lg">
@@ -32,7 +32,7 @@ export const Contact = ({ title, description, buttons }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mt-md-0 mt-5">
           <img
             className="img-fluid my-0 my-md-3 logos"
             height="100"
